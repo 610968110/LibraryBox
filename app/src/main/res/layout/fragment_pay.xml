@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="time"
+            type="android.databinding.ObservableInt" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_pay_1"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="229dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="169dp"
+            android:text="押金 ￥100"
+            android:textColor="#9F0303"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_below="@id/tv_pay_1"
+            android:layout_marginStart="229dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/qrcode_text" />
+
+        <TextView
+            android:id="@+id/tv_pay_2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="229dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="169dp"
+            android:text="押金 ￥100 + 耳机￥10"
+            android:textColor="#9F0303"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_below="@id/tv_pay_2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="229dp"
+            android:background="@drawable/qrcode_text" />
+
+        <ImageView
+            android:id="@+id/im_pay_type_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="30dp"
+            android:text='@{time+"秒"}'
+            android:textColor="#9C6C3E"
+            android:textSize="48sp" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_aliPay"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_alipay_bg"
+            android:text="支付宝"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_wechatPay"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_wechat_pay_bg"
+            android:text="微信"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+</layout>
