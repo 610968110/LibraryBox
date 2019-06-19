@@ -41,7 +41,10 @@ abstract class LibBaseActivity : AppCompatActivity(), View.OnClickListener {
         setTitle(getActivityTitle())
         setSubTitle(getSubTitle())
         XTools.ActivityUtil().addActivity(this)
-        fl_bg.setBackgroundResource(bg())
+        val bg = bg()
+        if (-1 != bg) {
+            fl_bg.setBackgroundResource(bg)
+        }
         val view = this.findViewById<View>(android.R.id.content)
         this.getBaseIntent()
         getDataBinding(childBinding)
